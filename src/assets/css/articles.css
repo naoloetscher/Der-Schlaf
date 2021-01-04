@@ -1,7 +1,7 @@
 /* Article 1 */
 
 .article-facts {
-    margin-top: 35%;
+    margin-top: 45%;
 }
 
 #text-slider, ul
@@ -23,8 +23,6 @@
 	display: inline-block;
     height: 200px;
     font-size: 20pt;
-    line-height: 1.5;
-    text-align: center;
     font-family: var(--font-title);
 }
 #text-slider ul
@@ -81,6 +79,29 @@
 
 /* Article 2 */
 
-.article-schlafzustaende {
-    
+/* Article 3 */
+
+/* Article 4 */
+
+.bad_good-line {
+ display: flex;
+ flex-wrap: wrap;
+ flex-basis: 100%;
+}
+
+.bad_good-entity {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 600px;
+
+    & img {
+        flex-basis: 20%;
+        height: auto;
+        width: 2px;
+    }
+
+    & div {
+        flex-basis: 80%;
+            text-align: left; 
+    }
 }

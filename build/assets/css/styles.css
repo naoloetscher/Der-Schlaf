@@ -851,7 +851,24 @@ template {
 html, body {
 	background-color: #23005A;
 	background-color: var(--primary-color);
-	margin: 10% 10%;
+	margin: 0 10%;
+}
+
+article {
+	margin-top: 20%;
+}
+
+html, body {
+    font-family: 'Helvetica Now Display Light', sans-serif;
+    font-family: var(--font-text);
+    font-size: 100%;
+    font-size: 15pt;
+	color: white;
+	color: var(--text-color);
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    line-height: 1.5;
 }
 
 h1 {
@@ -860,26 +877,28 @@ h1 {
     font-size: 40pt;
 }
 
-html, body {
-    font-family: 'Helvetica Now Display Light', sans-serif;
-    font-family: var(--font-text);
-	font-size: 100%;
-	color: white;
-	color: var(--text-color);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+h2 {
+    font-family: 'Helvetica Now Display Bold', sans-serif;
+    font-family: var(--font-title);
+    font-size: 30pt;
+}
+
+h3 {
+    font-family: 'Helvetica Now Display Bold', sans-serif;
+    font-family: var(--font-title);
+    font-size: 20pt;
 }
 
 .header {
     text-align: center;
-    line-height: 0.1;
-    margin-top: 20%;
+    line-height: 0.5;
+    margin-top: 40%;
 }
 
 /* Article 1 */
 
 .article-facts {
-    margin-top: 35%;
+    margin-top: 45%;
 }
 
 #text-slider, ul
@@ -903,8 +922,6 @@ html, body {
 	display: inline-block;
     height: 200px;
     font-size: 20pt;
-    line-height: 1.5;
-    text-align: center;
     font-family: 'Helvetica Now Display Bold', sans-serif;
     font-family: var(--font-title);
 }
@@ -964,8 +981,31 @@ html, body {
 
 /* Article 2 */
 
-.article-schlafzustaende {
-    
+/* Article 3 */
+
+/* Article 4 */
+
+.bad_good-line {
+ display: flex;
+ flex-wrap: wrap;
+ flex-basis: 100%;
 }
+
+.bad_good-entity {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 600px
+}
+
+.bad_good-entity img {
+        flex-basis: 20%;
+        height: auto;
+        width: 2px;
+    }
+
+.bad_good-entity div {
+        flex-basis: 80%;
+            text-align: left; 
+    }
 
 /*# sourceMappingURL=styles.css.map */
