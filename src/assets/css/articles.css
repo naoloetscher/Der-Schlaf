@@ -1,7 +1,7 @@
 /* Article 1 */
 
 .article-facts {
-    margin-top: 45%;
+    margin-top: 27%;
 }
 
 #text-slider, ul
@@ -83,25 +83,39 @@
 
 /* Article 4 */
 
+.bad_good {
+    display: flex;
+}
+
+.bad_good-icon {
+
+    display: flex;
+    align-items: center;
+
+    & img {
+        padding-right: 20px;
+    }
+}
+
 .bad_good-line {
  display: flex;
  flex-wrap: wrap;
- flex-basis: 100%;
 }
 
 .bad_good-entity {
     display: flex;
     flex-wrap: nowrap;
-    width: 600px;
-
-    & img {
-        flex-basis: 20%;
-        height: auto;
-        width: 2px;
-    }
+    align-items: center;
 
     & div {
-        flex-basis: 80%;
             text-align: left; 
+    }
+}
+
+.bad_good-entity-image {
+    min-width: 100px;
+
+    & img {
+        text-align:center;
     }
 }

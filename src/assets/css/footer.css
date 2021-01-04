@@ -1,0 +1,10 @@
+footer {
+    margin-top: 15%;
+    margin: ;
+	background-image: url(../img/footer-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+	position: relative;
+    height: 20vw;
+}

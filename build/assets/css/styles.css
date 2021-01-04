@@ -851,11 +851,11 @@ template {
 html, body {
 	background-color: #23005A;
 	background-color: var(--primary-color);
-	margin: 0 10%;
 }
 
 article {
-	margin-top: 20%;
+	margin-top: 50%;
+	margin: 0 20%;
 }
 
 html, body {
@@ -892,13 +892,13 @@ h3 {
 .header {
     text-align: center;
     line-height: 0.5;
-    margin-top: 40%;
+    margin-top: 15%;
 }
 
 /* Article 1 */
 
 .article-facts {
-    margin-top: 45%;
+    margin-top: 27%;
 }
 
 #text-slider, ul
@@ -985,27 +985,52 @@ h3 {
 
 /* Article 4 */
 
+.bad_good {
+    display: flex;
+}
+
+.bad_good-icon {
+
+    display: flex;
+    align-items: center
+}
+
+.bad_good-icon img {
+        padding-right: 20px;
+    }
+
 .bad_good-line {
  display: flex;
  flex-wrap: wrap;
- flex-basis: 100%;
 }
 
 .bad_good-entity {
     display: flex;
     flex-wrap: nowrap;
-    width: 600px
+    align-items: center
 }
 
-.bad_good-entity img {
-        flex-basis: 20%;
-        height: auto;
-        width: 2px;
-    }
-
 .bad_good-entity div {
-        flex-basis: 80%;
             text-align: left; 
     }
+
+.bad_good-entity-image {
+    min-width: 100px
+}
+
+.bad_good-entity-image img {
+        text-align:center;
+    }
+
+footer {
+    margin-top: 15%;
+    margin: ;
+	background-image: url(../img/footer-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+	position: relative;
+    height: 20vw;
+}
 
 /*# sourceMappingURL=styles.css.map */
