@@ -985,52 +985,49 @@ h3 {
 
 /* Article 4 */
 
-.bad_good {
-    display: flex;
+.badGoodIcon {
+	text-align: center;
 }
 
-.bad_good-icon {
-
-    display: flex;
-    align-items: center
+ul.badGoodLine {
+	display: flex;
+	flex-wrap: wrap
 }
 
-.bad_good-icon img {
-        padding-right: 20px;
-    }
+ul.badGoodLine li {
+		flex-basis: 50%;
+		display: flex
+	}
 
-.bad_good-line {
- display: flex;
- flex-wrap: wrap;
+ul.badGoodLine li div {
+			text-align: left;
+		}
+
+li.badGoodEntity {
+	flex-basis: 50%;
+	display: flex
 }
 
-.bad_good-entity {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center
+li.badGoodEntity div {
+		text-align: left;
+	}
+
+.badGoodEntityImage {
+	padding-right: 20px;
+	margin: auto;
 }
-
-.bad_good-entity div {
-            text-align: left; 
-    }
-
-.bad_good-entity-image {
-    min-width: 100px
-}
-
-.bad_good-entity-image img {
-        text-align:center;
-    }
 
 footer {
-    margin-top: 15%;
+   /* 
+   	margin-top: 15%;
     margin: ;
+	background-position: center bottom;
 	background-image: url(../img/footer-bg.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position: center bottom;
 	position: relative;
-    height: 20vw;
+	height: 20vw;
+	*/
 }
 
 /*# sourceMappingURL=styles.css.map */

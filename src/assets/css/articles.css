@@ -83,39 +83,31 @@
 
 /* Article 4 */
 
-.bad_good {
-    display: flex;
+.badGoodIcon {
+	text-align: center;
 }
 
-.bad_good-icon {
-
-    display: flex;
-    align-items: center;
-
-    & img {
-        padding-right: 20px;
-    }
+ul.badGoodLine {
+	display: flex;
+	flex-wrap: wrap; 
+	& li {
+		flex-basis: 50%;
+		display: flex;
+		& div {
+			text-align: left;
+		}
+	}
 }
 
-.bad_good-line {
- display: flex;
- flex-wrap: wrap;
+li.badGoodEntity {
+	flex-basis: 50%;
+	display: flex;
+	& div {
+		text-align: left;
+	}
 }
 
-.bad_good-entity {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-
-    & div {
-            text-align: left; 
-    }
-}
-
-.bad_good-entity-image {
-    min-width: 100px;
-
-    & img {
-        text-align:center;
-    }
+.badGoodEntityImage {
+	padding-right: 20px;
+	margin: auto;
 }
