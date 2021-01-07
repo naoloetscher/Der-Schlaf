@@ -1,12 +1,12 @@
 /* Article 1 */
 
 .article-facts {
-    margin-top: 27%;
+	margin-top: 500px;
 }
 
 #text-slider, ul
 {
-    height: 300px;
+    height: 150px;
 }
 #text-slider
 {
@@ -44,7 +44,7 @@
 	margin: 0 auto;
 	padding: 0;
 	width: 550px;
-    min-height: 180px;
+    min-height: 150px;
 }
 
 @-webkit-keyframes slide-animation {
@@ -83,31 +83,45 @@
 
 /* Article 4 */
 
-.badGoodIcon {
-	text-align: center;
-}
+
 
 ul.badGoodLine {
 	display: flex;
 	flex-wrap: wrap; 
+	justify-content: space-between;
+
 	& li {
-		flex-basis: 50%;
+		flex-basis: 48%;
 		display: flex;
+		flex-grow: 0;
+		flex-shrink: 0;
+		padding-top: 50px;
+
+		&.badGoodIcon {
+			display: block;
+			text-align: center;
+		
+			& img {
+				padding-right: 20px;
+				position: relative;
+				top: 5px;
+			}
+		}
+
 		& div {
 			text-align: left;
+			flex-grow: 1;
+			flex-shrink: 1;
+
+			&.badGoodEntityImage {
+				flex-grow: 0;
+				padding-right: 30px;
+				width: 100px;
+				flex-grow: 0;
+				flex-shrink: 0;
+				text-align: right;
+			}
 		}
 	}
 }
 
-li.badGoodEntity {
-	flex-basis: 50%;
-	display: flex;
-	& div {
-		text-align: left;
-	}
-}
-
-.badGoodEntityImage {
-	padding-right: 20px;
-	margin: auto;
-}
