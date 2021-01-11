@@ -71,8 +71,9 @@ const headerJS = [
 const footerJS = [
 	'./node_modules/webfontloader/webfontloader.js',
 	'./node_modules/jquery/dist/jquery.js',
-	'./src/assets/js/**'
-	'./node_modules/rellax/rellax.min.js'
+	'./src/assets/js/**',
+	'./node_modules/rellax/rellax.min.js',
+	'./node_modules/chart.js/dist/Chart.js'
 ];
 
 //--------------------------------------------------------------------------------------------------
