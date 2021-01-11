@@ -1,5 +1,51 @@
-.rellaxTest {
+.parralax-stars {
     position: absolute;
-    width: 500px;
-    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/parallax/bg-stars.png);
+}
+
+.cloud1 {
+    margin-left: -5%;
+    margin-top: -180px;
+}
+
+.cloud2 {
+    margin-top: 60px;
+    margin-right: 10%;
+    right: 0;
+}
+
+.cloud3 {
+    margin-top: 800px;
+    margin-right: 15%;
+    right: 0;
+}
+
+.cloud4 {
+    margin-top: 1200px;
+    margin-left: 10%;
+}
+
+.cloud5 {
+    margin-top: 1800px;
+    margin-right: -5%;
+    right: 0;
+}
+
+.cloud6 {
+    margin-top: 1800px;
+    margin-left: 10%;
+}
+
+.jupiter {
+    margin-top: 1300px;
+    margin-right: 20%;
+    right: 0;
+}
+
+.parallaxContent {
+    & img {
+        position: absolute;
+    }
 }

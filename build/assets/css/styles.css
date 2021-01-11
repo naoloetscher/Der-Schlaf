@@ -845,7 +845,15 @@ template {
 
 
 	font-style: normal;
-	font-weight: 400;
+	font-weight: normal;
+}
+
+b, strong {
+	font-family: 'Helvetica Now Display Bold';
+}
+
+em, i {
+	font-family: 'Helvetica Now Display Light Italic';
 }
 
 html, body {
@@ -855,6 +863,7 @@ html, body {
 
 article {
 	margin: 300px 15%;
+	text-align: center;
 }
 
 html, body {
@@ -866,7 +875,6 @@ html, body {
 	color: var(--text-color);
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     line-height: 1.5;
 }
 
@@ -894,10 +902,10 @@ h3 {
     margin-bottom: 10px;
 }
 
-.header {
+.header-title {
     text-align: center;
     line-height: 1.5;
-    margin-top: 15%;
+    padding-top: 500px;
 }
 
 /* Article 1 */
@@ -1040,10 +1048,54 @@ footer {
 	height: 20vw;
 }
 
-.rellaxTest {
+.parralax-stars {
     position: absolute;
-    width: 500px;
-    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/parallax/bg-stars.png);
 }
+
+.cloud1 {
+    margin-left: -5%;
+    margin-top: -180px;
+}
+
+.cloud2 {
+    margin-top: 60px;
+    margin-right: 10%;
+    right: 0;
+}
+
+.cloud3 {
+    margin-top: 800px;
+    margin-right: 15%;
+    right: 0;
+}
+
+.cloud4 {
+    margin-top: 1200px;
+    margin-left: 10%;
+}
+
+.cloud5 {
+    margin-top: 1800px;
+    margin-right: -5%;
+    right: 0;
+}
+
+.cloud6 {
+    margin-top: 1800px;
+    margin-left: 10%;
+}
+
+.jupiter {
+    margin-top: 1300px;
+    margin-right: 20%;
+    right: 0;
+}
+
+.parallaxContent img {
+        position: absolute;
+    }
 
 /*# sourceMappingURL=styles.css.map */

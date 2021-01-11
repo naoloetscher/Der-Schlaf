@@ -67,12 +67,12 @@ Header & Footer JavaScript Boundles
 -------------------------------------------------------------------------------------------------- */
 const headerJS = [
 	'./src/etc/analytics.js',
-	'./node_modules/aos/dist/aos.js'
 ];
 const footerJS = [
 	'./node_modules/webfontloader/webfontloader.js',
 	'./node_modules/jquery/dist/jquery.js',
 	'./src/assets/js/**'
+	'./node_modules/rellax/rellax.min.js'
 ];
 
 //--------------------------------------------------------------------------------------------------

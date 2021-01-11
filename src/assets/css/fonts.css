@@ -10,5 +10,13 @@
 
 
 	font-style: normal;
-	font-weight: 400;
+	font-weight: normal;
+}
+
+b, strong {
+	font-family: 'Helvetica Now Display Bold';
+}
+
+em, i {
+	font-family: 'Helvetica Now Display Light Italic';
 }
