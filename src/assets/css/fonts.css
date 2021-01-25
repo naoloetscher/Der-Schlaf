@@ -15,6 +15,7 @@
 
 b, strong {
 	font-family: 'Helvetica Now Display Bold';
+	src: url('../fonts/HelveticaNowDisplay-Bold.eot');
 }
 
 em, i {

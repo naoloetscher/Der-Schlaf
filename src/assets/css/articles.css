@@ -1,7 +1,7 @@
 /* Article 1 */
 
 .article-facts {
-	margin-top: 500px;
+	margin-top: 390px;
 }
 
 #text-slider, ul
@@ -78,6 +78,20 @@
 
 
 /* Article 2 */
+
+.linechart-css {
+	margin-top: 80px;
+}
+
+.article-schlafzustaende {
+	height: auto;
+}
+
+.pieChartGrid {
+	display: flex;
+	justify-content: space-around;
+
+}
 
 /* Article 3 */
 

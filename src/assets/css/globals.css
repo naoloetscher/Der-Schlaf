@@ -1,9 +1,12 @@
 html, body {
 	background-color: var(--primary-color);
+	background-image: url(../img/header-bg.png);
+	background-repeat: no-repeat;
 }
 
 article {
 	margin: 300px 15%;
 	text-align: center;
+	width: auto;
 }
 

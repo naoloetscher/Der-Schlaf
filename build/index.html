@@ -34,8 +34,8 @@
 <!-- <div class="parralax-stars rellax"></div> -->
 <img class="cloud1 rellax" data-rellax-speed="-5" src="../assets/img/parallax/cloud1-moon.png" alt="">
 <img class="cloud2 rellax" data-rellax-speed="-4" src="../assets/img/parallax/cloud2.png" alt="">
-<img class="cloud3 rellax" data-rellax-speed="21" src="../assets/img/parallax/cloud3.png" alt="">
-<img class="cloud4 rellax" data-rellax-speed="8" src="../assets/img/parallax/cloud4.png" alt="">
+<img class="cloud3 rellax" data-rellax-speed="7" src="../assets/img/parallax/cloud3.png" alt="">
+<img class="cloud4 rellax" data-rellax-speed="13" src="../assets/img/parallax/cloud4.png" alt="">
 <img class="cloud5 rellax" data-rellax-speed="15" src="../assets/img/parallax/cloud5.png" alt="">
 <img class="cloud6 rellax" data-rellax-speed="8" src="../assets/img/parallax/cloud6.png" alt="">
 
@@ -77,18 +77,22 @@
 </article>
 <article class="article-schlafzustaende">
     <h2>Schlafzustände</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate vitae vero totam, nemo perferendis dignissimos ipsum accusamus explicabo suscipit magni officiis numquam ipsa mollitia veritatis, tempora minus ut. Suscipit, iste.</p>
+    <p>Einschlafphase, Leichtschlafphase, Tiefschlaf und REM-Schlaf – wir schlafen in einem festgelegten Rhythmus, in dem jede Phase durch typische Gehirnwellenmuster erkennbar ist. Dieser Graph zeigt wie ein durchschnittlicher 8 Stundenschlaf einer gesunden Person aussieht.</p>
+    <div class="graphExplanation">
+
+    </div>
     <div class="linechart-css">
-        <canvas id="myChart" width="400" height="400"></canvas>
+        <canvas id="linechart" height="600"></canvas>
         <script>
-        var ctx = document.getElementById('myChart');
-        var myChart = new Chart(ctx, {
+        var ctx = document.getElementById('linechart');
+        var linechart = new Chart(ctx, {
             type: 'line',
             data: {
                 labels: ['00:00', '00:15', '00:30', '00:45', '01:00', '01:15', '01:30', '01:45', '02:00', '02:15', '02:30', '02:45', '03:00', '03:15', '03:30', '03:45', '04:00', '04:15', '04:30', '04:45', '05:00', '05:15', '05:30', '05:45', '06:00', '06:15', '06:30', '07:00', '07:15', '07:30', '07:45', '08:00',],
                 datasets: [{
                     label: 'Schlafzustand',
-                    data: [ 5, 4, 3, 2, 1, 1, 2, 3, 4, 4.5, 4.5, 3, 2, 1, 1, 2, 3, 4, 4.5, 4.5, 3, 2, 1, 1, 2, 3, 4, 4.5, 4.5, 3, ],
+                    data: [ 5, 2.5, 2, 0.5, 0.5, 0.5, 2, 2.5, 4, 4, 2, 1.5, 0.5, 0.5, 1.5, 4, 4, 2, 1.5, 1, 1.5, 4, 4, 2, 1.5, 1, 1.5, 4, 4, 2.5, 2.5, 5],
+                    pointColor : 'rgba(250, 137, 0, 1)',
                     borderColor: [
                         'rgba(250, 137, 0, 1)',
                         'rgba(250, 137, 0, 1)',
@@ -105,12 +109,30 @@
                         'rgba(250, 137, 0, 1)',
                         'rgba(250, 137, 0, 1)',
                         'rgba(250, 137, 0, 1)',
-
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
+                        'rgba(250, 137, 0, 1)',
                     ],
                     borderWidth: 5
                 }]
             },
             options: {
+                maintainAspectRatio: false,
+
                 scales: {
                     yAxes: [{
                         ticks: {
@@ -122,9 +144,121 @@
         });
         </script> 
     </div>
+</article>
 <article class="article-polyphasischer_schlaf">
     <h2>Polyphasischer Schlaf</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate vitae vero totam, nemo perferendis dignissimos ipsum accusamus explicabo suscipit magni officiis numquam ipsa mollitia veritatis, tempora minus ut. Suscipit, iste.</p>
+    <p>Der polyphasische Schlaf besteht aus mehreren kurzen Schlafzeiten. In der Regel wird eine längere Schlafeinheit von einigen Stunden durch kurze, über den Tag verteilte Nickerchen ergänzt. Zum Beispiel Lastwagenfahrer oder Neugeborene sind polyphaische Schläfer. 
+        Wenn man aber keine Powernaps über den Tag macht, nennt man sich einen monophasichen Schläfer. Der Vorteil bei Powernaps ist, dass der Körper (wie oben dargestellt) beim Einschlafprozess direkt in den Tiefschlaf fällt. Da der Körper in diesen Tiefschlafphasen 
+        den grössten erholungswert hat, kann man mit Powernaps mit weniger als 8 Stunden Schlaf ausgeschlafen sein. Dazu ist der erste Tiefschlaf meistens der längste und tiefste.
+    </p>
+    <div class="pieChartGrid">
+        <div class="pieChart">
+            <canvas id="piechart1" height="300px" width="300px"></canvas>
+            <script>
+            var ctx = document.getElementById('piechart1');
+            var piechart1 = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        'Wachphase 16h',
+                        'Schlafphase 8h',
+                        ],
+                    datasets: [{
+                        label: 'Schlafzustand',
+                        data: [16, 8],
+                        backgroundColor: [
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        ],
+                        hoverBorderColor: [
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        ],
+                        borderColor: [
+                        '#23005A',
+                        '#23005A',
+                        '#23005A', 
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        ],
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                }
+            });
+            </script>
+            <h4>Monophasischer Schlaf-Rhythmus</h4>
+        </div>
+        <div class="pieChart">
+            <canvas id="piechart2" height="300px" width="300px"></canvas>
+            <script>
+            var ctx = document.getElementById('piechart2');
+            var piechart2 = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        'Wachphase 8h 50min',
+                        'Schlafphase 6h',
+                        'Wachphase 8h 50min',
+                        'Schlafphase 20min',
+                        ],
+                    datasets: [{
+                        label: 'Schlafzustand',
+                        data: [8.85, 6, 8.85, 0.3],
+                        backgroundColor: [
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        ],
+                        hoverBorderColor: [
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        ],
+                        borderColor: [
+                        '#23005A',
+                        '#23005A',
+                        '#23005A', 
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        ],
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                }
+            });
+            </script>
+            <h4>Biphasischer Schlaf-Rhythmus</h4>
+        </div>
+    </div>
 </article>
 <article class="article-kannst_du_nicht_schlafen">
     <h2>Tipps für guten Schlaf</h2>
@@ -215,9 +349,6 @@
 	<script src="./assets/js/footer-bundle.js"></script>
 	<script>
 		var rellax = new Rellax('.rellax');
-	</script>
-	<script>
-		var myChart = new Chart(ctx, {...});
 	</script>
 </body>
 </html>
