@@ -27,7 +27,8 @@
 </article>
 <article class="article-schlafzustaende">
     <h2>Schlafzustände</h2>
-    <p>Einschlafphase, Leichtschlafphase, Tiefschlaf und REM-Schlaf – wir schlafen in einem festgelegten Rhythmus, in dem jede Phase durch typische Gehirnwellenmuster erkennbar ist. Dieser Graph zeigt wie ein durchschnittlicher 8 Stundenschlaf einer gesunden Person aussieht.</p>
+    <p>Einschlafphase, Leichtschlafphase, Tiefschlaf und REM-Schlaf – wir schlafen in einem festgelegten Rhythmus, in dem jede Phase durch typische Gehirnwellenmuster erkennbar ist. 
+        Dieser Graph zeigt wie ein durchschnittlicher 8 Stundenschlaf einer gesunden Person aussieht. Zwischen 4.5 und 2.5 befindet sich die sogenannte REM (Rapid Eye Movement)Schlafphase, in dieser Träumt man - vo daher auch die Bewegungen der Augen.</p>
     <div class="graphExplanation">
 
     </div>
@@ -82,7 +83,9 @@
             },
             options: {
                 maintainAspectRatio: false,
-
+                legend: {
+                        display: false,
+                },
                 scales: {
                     yAxes: [{
                         ticks: {
@@ -99,7 +102,7 @@
     <h2>Polyphasischer Schlaf</h2>
     <p>Der polyphasische Schlaf besteht aus mehreren kurzen Schlafzeiten. In der Regel wird eine längere Schlafeinheit von einigen Stunden durch kurze, über den Tag verteilte Nickerchen ergänzt. Zum Beispiel Lastwagenfahrer oder Neugeborene sind polyphaische Schläfer. 
         Wenn man aber keine Powernaps über den Tag macht, nennt man sich einen monophasichen Schläfer. Der Vorteil bei Powernaps ist, dass der Körper (wie oben dargestellt) beim Einschlafprozess direkt in den Tiefschlaf fällt. Da der Körper in diesen Tiefschlafphasen 
-        den grössten erholungswert hat, kann man mit Powernaps mit weniger als 8 Stunden Schlaf ausgeschlafen sein. Dazu ist der erste Tiefschlaf meistens der längste und tiefste.
+        den grössten Erholungswert hat, kann man mit Powernaps mit weniger als 8 Stunden Schlaf ausgeschlafen sein. Dazu ist der erste Tiefschlaf meistens der längste und tiefste.
     </p>
     <div class="pieChartGrid">
         <div class="pieChart">
@@ -110,12 +113,12 @@
                 type: 'doughnut',
                 data: {
                     labels: [
-                        'Wachphase 16h',
+                        'Wachphase 18h',
                         'Schlafphase 8h',
                         ],
                     datasets: [{
                         label: 'Schlafzustand',
-                        data: [16, 8],
+                        data: [18, 8],
                         backgroundColor: [
                         '#FF8900',
                         '#23005A',
@@ -149,10 +152,13 @@
                 },
                 options: {
                     maintainAspectRatio: false,
+                    legend: {
+                        display: false,
+                    }
                 }
             });
             </script>
-            <h4>Monophasischer Schlaf-Rhythmus</h4>
+            <h4>Biphasischer Schlaf-Rhythmus</h4>
         </div>
         <div class="pieChart">
             <canvas id="piechart2" height="300px" width="300px"></canvas>
@@ -203,10 +209,214 @@
                 },
                 options: {
                     maintainAspectRatio: false,
+                    legend: {
+                        display: false,
+                    }
                 }
             });
             </script>
             <h4>Biphasischer Schlaf-Rhythmus</h4>
+        </div>
+    </div>
+    <div class="pieChartGrid">
+        <div class="pieChart">
+            <canvas id="piechart3" height="300px" width="300px"></canvas>
+            <script>
+            var ctx = document.getElementById('piechart3');
+            var piechart3 = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        'Wachphase 4h 43min',
+                        'Schlafphase 4h 30min',
+                        'Wachphase 4h 43min',
+                        'Schlafphase 20min',
+                        'Wachphase 4h 43min',
+                        'Schlafphase 20min',
+                        ],
+                    datasets: [{
+                        label: 'Schlafzustand',
+                        data: [4.725, 4.5, 4.725, 0.3, 4.725, 0.3, 4.725, 0.3],
+                        backgroundColor: [
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        ],
+                        hoverBorderColor: [
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        ],
+                        borderColor: [
+                        '#23005A',
+                        '#23005A',
+                        '#23005A', 
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        ],
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false,
+                    }
+                }
+            });
+            </script>
+            <h4>“Everyman“ Schlaf-Rhytmus</h4>
+        </div>
+        <div class="pieChart">
+            <canvas id="piechart4" height="300px" width="300px"></canvas>
+            <script>
+            var ctx = document.getElementById('piechart4');
+            var piechart4 = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        'Wachphase 5h 30min',
+                        'Schlafphase 30min',
+                        'Wachphase 5h 30min',
+                        'Schlafphase 30min',
+                        'Wachphase 5h 30min',
+                        'Schlafphase 30min',
+                        'Wachphase 5h 30min',
+                        'Schlafphase 30min',
+                        ],
+                    datasets: [{
+                        label: 'Schlafzustand',
+                        data: [5.5, 0.5, 5.5, 0.5, 5.5, 0.5, 5.5, 0.5],
+                        backgroundColor: [
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        ],
+                        hoverBorderColor: [
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        ],
+                        borderColor: [
+                        '#23005A',
+                        '#23005A',
+                        '#23005A', 
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        ],
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false,
+                    }
+                }
+            });
+            </script>
+            <h4>"Dymaxion“ Schlaf-Rhytmus</h4>
+        </div>
+    </div>
+    <div class="pieChartGrid">
+        <div class="pieChart">
+            <canvas id="piechart5" height="300px" width="300px"></canvas>
+            <script>
+            var ctx = document.getElementById('piechart5');
+            var piechart5 = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        'Wachphase 3h 42min',
+                        'Schlafphase 20min',
+                        'Wachphase 3h 42min',
+                        'Schlafphase 20min',
+                        'Wachphase 3h 42min',
+                        'Schlafphase 20min',
+                        'Wachphase 3h 42min',
+                        'Schlafphase 20min',
+                        'Wachphase 3h 42min',
+                        'Schlafphase 20min',
+                        'Wachphase 3h 42min',
+                        'Schlafphase 20min',
+                        ],
+                    datasets: [{
+                        label: 'Schlafzustand',
+                        data: [3.7, 0.3, 3.7, 0.3, 3.7, 0.3, 3.7, 0.3, 3.7, 0.3, 3.7, 0.3],
+                        backgroundColor: [
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        '#23005A',
+                        '#FF8900',
+                        ],
+                        hoverBorderColor: [
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        '#FF8900',
+                        ],
+                        borderColor: [
+                        '#23005A',
+                        '#23005A',
+                        '#23005A', 
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        '#23005A',
+                        ],
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    legend: {
+                        display: false,
+                    }
+                }
+            });
+            </script>
+            <h4>"Uberman“ Schlaf-Rhytmus</h4>
         </div>
     </div>
 </article>

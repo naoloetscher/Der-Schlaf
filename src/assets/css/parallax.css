@@ -27,8 +27,8 @@
 }
 
 .cloud5 {
-    margin-top: 3800px;
-    margin-right: 5%;
+    margin-top: 3500px;
+    margin-right: -9%;
     right: 0;
 }
 
@@ -37,10 +37,28 @@
     margin-left: 10%;
 }
 
+.cloud6 {
+    margin-top: 4300px;
+    margin-left: 10%;
+}
+
+.cloud7 {
+    margin-top: 5800px;
+    margin-left: 10%;
+}
+
+
 .jupiter {
-    margin-top: 1000px;
-    margin-right: 20%;
+    margin-top: 900px;
+    margin-right: 2%;
     right: 0;
+    opacity: 0.2;
+}
+
+.mercury {
+    margin-top: 900px;
+    margin-left: 10%;
+    opacity: 0.2;
 }
 
 .parallaxContent {
